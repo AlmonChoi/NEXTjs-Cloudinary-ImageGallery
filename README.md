@@ -75,7 +75,7 @@ npm run start
 - Home Page
 ![Home](./README.screen/Home.jpg)
 
-- Clcik on any image
+- Download image
 ![Home](./README.screen/Picture.jpg)
 
 
