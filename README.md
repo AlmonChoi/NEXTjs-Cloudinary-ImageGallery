@@ -26,18 +26,22 @@ The demo image are come from 'Sample' folder
 - Rename the '.env.local.example' to '.env'
 - Update the Account name, API key and folder to show
 
-'''
+```bash
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=xxxx
 CLOUDINARY_API_KEY=xxxxx
 CLOUDINARY_API_SECRET=xxxxxx
 CLOUDINARY_FOLDER="Samples"
-'''
+```
+
+## 3. Modification
+
+- Modify the code inside '/pages/index.tsx' 
 
 ## Fix Error: Invalid src prop on `next/image`, hostname "res.cloudinary.com" is not configured under images in your `next.config.js`
 
 - During 'npm run dev' if 'Invalid src' prompted, remark or remove 'port' and 'pathname' in next.config.js file
 
-'''
+```bash
 // next.config.js
 module.exports = {
   images: {
@@ -52,17 +56,19 @@ module.exports = {
     ],
   },
 };
-'''
+```
 
-## Deployment
+# Deployment
 
-- Complie and Run production code
+## Complie and Run production code
 
-'''
+```bash
 npm run build
 
 npm run start
-'''
+```
+
+## Testing
 
 - Open browser and access to http://localhost:3000/
 
