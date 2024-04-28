@@ -3,35 +3,40 @@ Demo of Next.JS Image Gallery Starter Template with image storage in Cloudinary
 
 ## Components
 
-This example created from Vercel image gallery template using Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
+This example application is created from Vercel's image gallery template running Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
 
 ![Image_Gallery_Starter](./README.screen/Image_Gallery_Starter_template.jpg)
 
+
+The demo image are come from 'Sample' folder
 ![Sample Image](./README.screen/sample_image.jpg)
 
 
-## Create the Demo application
+## 1. Create the Demo application
 
 
 ```bash
  npx create-next-app --example with-cloudinary nextjs-image-gallery
 ```
 
-## Configuration Setup
+## 2. Update Configuration 
 - Get the API key (create free account, if needed)
 ![API key](./README.screen/API_key.jpg)
 
-- Rename the .env.local.example to .env
+- Rename the '.env.local.example' to '.env'
+- Update the Account name, API key and folder to show
+
 '''
-NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
-CLOUDINARY_FOLDER=
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=xxxx
+CLOUDINARY_API_KEY=xxxxx
+CLOUDINARY_API_SECRET=xxxxxx
+CLOUDINARY_FOLDER="Samples"
 '''
 
 ## Fix Error: Invalid src prop on `next/image`, hostname "res.cloudinary.com" is not configured under images in your `next.config.js`
 
-- Remark or remove 'port' and 'pathname' in next.config.js file
+- During 'npm run dev' if 'Invalid src' prompted, remark or remove 'port' and 'pathname' in next.config.js file
+
 '''
 // next.config.js
 module.exports = {
@@ -59,11 +64,12 @@ npm run build
 npm run start
 '''
 
-- Access http://localhost:3000/ 
-Home Page
+- Open browser and access to http://localhost:3000/
+
+- Home Page
 ![Home](./README.screen/Home.jpg)
 
-Image zoom, download
+- Clcik on any image
 ![Home](./README.screen/Picture.jpg)
 
 
