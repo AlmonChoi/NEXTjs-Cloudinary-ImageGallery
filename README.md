@@ -5,14 +5,13 @@ Demo of Next.JS Image Gallery Starter Template with image storage in Cloudinary
 
 This example created from Vercel image gallery template using Next.js, [Cloudinary](https://cloudinary.com), and [Tailwind](https://tailwindcss.com).
 
-![Home](./README.screen/Picture.jpg)
+![Image_Gallery_Starter](./README.screen/Image_Gallery_Starter_template.jpg)
 
 ![Sample Image](./README.screen/sample_image.jpg)
 
 
 ## Create the Demo application
 
-![Image_Gallery_Starter](./README.screen/Image_Gallery_Starter_template.jpg)
 
 ```bash
  npx create-next-app --example with-cloudinary nextjs-image-gallery
